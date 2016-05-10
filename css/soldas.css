@@ -1,0 +1,179 @@
+body{
+	padding-left: 5px;
+	padding-right: 5px;	
+}
+div#toptitle {
+	margin-top: 10px;
+	height:120px;
+	background-color: white; 
+	padding:0px;
+}
+
+div#img-logo {
+	padding: 0px;	
+	height: 120px;
+	width: 180px;
+	float: left;
+}
+
+div#img-logo img{
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+div#text-logo {
+	margin-left: 180px;
+	text-align: left;
+	vertical-align: middle;
+	color: white;
+	height: 120px;
+	background-color: maroon;
+	padding-top: 35px;
+	padding-left: 80px;
+	font-size: xx-large;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+div#menu-bar{
+	margin-top: 2px;
+	height: 60px;
+	background-color: maroon;
+	padding-left: 60px;
+	transform: translateY(0px);
+	border-radius: 10px;
+}
+
+div#menu-bar ul{
+	list-style-type: none;
+	margin: 0px;
+	height: 60px;
+	padding-top:15px;
+	border-radius: 10px;
+}
+
+div#menu-bar ul li{
+	margin: 0px;
+	display: inline;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 10px;
+}
+
+div#menu-bar ul li a{
+	height: 50px;
+	color: white;
+	margin-top:10px;
+	text-decoration: none;
+}
+
+div#menu-bar ul li a:link{
+	color: white;
+}
+
+div#menu-bar ul li a:visited{
+	color: white;
+}
+
+div#menu-bar ul li a:hover{
+	color: black;
+}
+
+div#menu-bar ul li a:active{
+	color: black;
+}
+
+.animated {
+    transition: all 0.25s ease;
+}
+
+
+/*main content*/
+
+div#main-content{
+    margin-top: 3px;
+    border: 1px solid silver;	
+    border-radius: 10px;
+}
+
+div#main-product{
+	padding: 0px;
+	height: 300px;	
+	margin: 0px;
+	padding-top:10px;
+}
+
+div#main-text-intro{
+	width: 58%;
+	height: 300px;
+	margin: 0px;
+	float: left;
+}
+
+div#text-intro{
+	height: 200px;
+	text-align: justify;
+	padding-left: 20px;
+	padding-top: 10px;
+	text-indent: 10px;
+	font-family: sans-serif;
+	font-size: large;
+
+}
+
+div#brand{
+	/*border: 1px solid silver;*/
+	height: 100px;
+	text-align: justify;
+	padding-top: 30px;
+	padding-left: 5%;
+}
+
+div#brand img{
+	background-color: white;
+	height: 35px;
+	width: 60px;
+	margin-left:10px;
+	margin-right:10px;
+}
+
+div#main-logo{
+	text-align: center;
+	height: 300px;
+	margin-left: 59%;
+	margin-right: 5px;
+}
+
+div#main-logo img{
+	height: 75%;
+}
+
+
+/*contacts area*/
+
+div#contact{
+	margin-top:10px;
+	border: 1px solid silver;
+	text-align: center;
+	height: 30px;
+	padding-top:5px;
+	border-radius: 10px;
+}
+
+
+
+/*foot bar */
+
+div#footbar{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	height: 60px;
+	background-color: maroon;
+	color: white;
+	padding-top:10px;
+	border-radius: 10px;
+
+	text-align: center;
+	font-size: 15px;
+	font-weight: bold;
+}

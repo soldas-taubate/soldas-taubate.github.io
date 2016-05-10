@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--    above 3 meta tags must come first in the head -->
+
+    <meta name="description" content="">
+    <meta name="author" content="liang">
+
+    <link rel="icon" href="img/logo.jpg">
+	  <title > Center Soldas, Taubate, Sao Paulo</title>
+
+
+    <!--	bootstrap core css-->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!--    custom style for the template-->
+    <link href="css/soldas.css" rel="stylesheet">
+
+
+    <style>
+
+        div.navhead{
+            padding-top: 2px;
+            vertical-align: bottom;
+            height: 130px;
+            text-align: center;
+        }
+        ul{
+            height: 60px;
+            background-color:maroon;
+            width: 100%;
+        }
+        ul li {
+            height: 60px;
+            vertical-align: middle;
+        }
+        li a {
+            padding:0;
+            vertical-align: middle;
+            font-family: monospace;
+            font-size: x-large;
+            color: black;
+            background-color: maroon;
+        }
+
+
+        li a:
+    </style>
+
+</head>
+<body>
+
+  <div id="toptitle" >
+    
+    <div id="img-logo">
+      <a href="#"><img src="img/logo.jpg" alt="" height="120px"></a>
+    </div>
+
+    <div id="text-logo">
+        Recuperacao de altura de cabecote stander
+    </div>
+  </div>
+
+  <div id="menu-bar">
+    <ul >
+      <li><a href="">Inicio</a></li>
+      <li><a href="">Produtos</a></li>
+      <li><a href="">Servicos</a></li>
+      <li><a href="">Contatos</a></li>
+      <li><a href="">Q&A</a></li>
+    </ul>
+  </div>
+
+
+
+    <!--    page main content -->
+       <div id="main-content" >
+
+          <!-- cabecote introduction area  -->
+          <div id="main-product">
+
+            <div id="main-text-intro">
+              <div id="text-intro">
+              <h1 style="font-family: monospace;">Cabecote</h1>
+               Fazemos enchimento de solda quando o cabecote esta baixo e retificamos, voltando a ficar stander.Fazemos tambem soldas de inox, ferro, aluminio, cobre, etc
+              </div> 
+
+              <div id="brand">
+                 <img src="img/ford.jpg" >
+                 <img src="img/chevrolet.jpg" >
+                 <img src="img/fiat.jpg" >
+                 <img src="img/volkswagen.jpg" >
+                 <img src="img/hyundai.jpg" >
+                 <img src="img/toyota.jpg" >
+              </div>
+            </div>
+
+            <div id="main-logo">
+               <img src="img/cabecote-logo.jpg" >
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+    <!--    contacts areas-->
+        <!-- <span class="glyphicon glyphicon-earphone" ></span>  -->
+
+    <div id="contact">
+        <span class="glyphicon glyphicon-earphone" ></span> 
+        Fabiano: (12)99137-9913 
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="glyphicon glyphicon-earphone" ></span> 
+        Diego: (12) 99218-3600
+    </div>
+
+    <!--    footbar -->
+    <div id="footbar">
+       Rua Com. Jose Cursino de Moura, 1611 - Box 14 -Taubate/SP<br/>
+        <span class="glyphicon glyphicon-earphone" ></span> (12)3621-9768
+    </div>
+    <!--    bootstrap core javascript-->
+    <script src="js/jquery-1.12.3.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+<script>
+var topbar = $('#topbar');
+
+var topbarHeight=topbar.outerHeight();
+
+function getElementByHash(hash){
+    // alert(hash);
+    return $(hash.replace(/(:|\.|\[|\]|,)/g, '\\$1'));
+}
+
+function fixOffset(){
+    var offset= getElementByHash(window.location.hash).offset();
+
+    if (offset) {
+        $('html, body').animate({scrollTop: offset.top - topbarHeight}, 1);
+    }
+}
+
+$(window).load(function() {
+
+    if (window.location.hash) {
+        fixOffset();
+    }
+
+    var start = topbar.offset().top;
+    var fixed = topbar.css('position');
+    var lastScrollTop = start;
+    var hidden = topbarHeight+1;
+
+    $(window).scroll(function(event) {
+
+        var scrollTop = $(window).scrollTop();
+
+
+        if(fixed){
+
+            if(scrollTop <= start){
+
+              fixed=false;
+              topbar.removeClass('animated');
+              topbar.css({ 'position': 'absolute', 'top': start+'px' });
+            }
+            else if (Math.abs(lastScrollTop-scrollTop)>100){
+              if (!topbar.hasClass('animated')) {
+                topbar.addClass('animated');
+              }
+
+              if (scrollTop > lastScrollTop && scrollTop >(topbarHeight+start+250)) {
+                topbar.css({'transform': 'translateY(-'+hidden+'px'});
+              }
+              else if(scrollTop < lastScrollTop){
+                topbar.css({'transform': 'translateY(0px)'});
+              }
+
+              lastScrollTop = scrollTop;
+            }
+          }
+          else if (scrollTop > start){
+            fixed=true;
+            topbar.css({'position': 'fixed', 'top': '0'});
+          }
+        });
+      });
+
+      $(document).ready(function() {
+       fixOffset();
+      });
+    </script>
+</body>
+</html>

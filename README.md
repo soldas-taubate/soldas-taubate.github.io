@@ -1,5 +1,5 @@
-#Center Soldas em Taubate, Sao Paulo, Brasil
+#Center Soldas em Taubaté, Sao Paulo, Brasil
 
-- Center soldas 
-- Taubate/SP
+- Center Soldas 
+- Taubaté/SP
 - Brasil

@@ -1,2 +1,5 @@
-# soldas-taubate.github.io
-Center Soldas, Taubate, Sao Paulo,  Brasil
+#Center Soldas em Taubate, Sao Paulo, Brasil
+
+- Center soldas 
+- Taubate/SP
+- Brasil

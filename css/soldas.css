@@ -20,6 +20,10 @@ nav#footer> div.container-fluid {
     border-radius: 10px;
 }
 
+img.nav-logo {
+	height: 100px;
+}
+
 
 #navbar > ul > li > a {
     color:white;

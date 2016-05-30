@@ -1,0 +1,35 @@
+nav#top-nav {
+	background-color: white;
+	border: 0;
+}
+nav#top-nav > div.container-fluid {
+	min-height: 80px;
+    background-color: maroon;
+    color:white;
+    border-radius: 10px;
+    padding-top: 13px;
+}
+
+nav#footer {
+	background-color: white;
+	border: 0;
+}
+nav#footer> div.container-fluid {
+    background-color: maroon;
+    color:white;
+    border-radius: 10px;
+}
+
+
+#navbar > ul > li > a {
+    color:white;
+    font-size: large;
+}
+
+#navbar > ul > li.active > a {
+    color:#000;
+    font-size: large;
+	background-color: maroon;
+}
+
+      

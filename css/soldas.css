@@ -32,4 +32,8 @@ nav#footer> div.container-fluid {
 	background-color: maroon;
 }
 
+.img-rounded {
+	max-height: 50px;
+	max-width: 80px;
+}
       

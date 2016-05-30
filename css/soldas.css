@@ -20,6 +20,11 @@ nav#footer> div.container-fluid {
     border-radius: 10px;
 }
 
+a.facebook-icon{
+	padding: 0;
+	margin-right: 10px;
+}
+
 img.nav-logo {
 	height: 100px;
 }

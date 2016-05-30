@@ -35,5 +35,13 @@ nav#footer> div.container-fluid {
 .img-rounded {
 	max-height: 50px;
 	max-width: 80px;
+
+	min-height: 20px;
+	min-width: 32px;
+}
+
+.img-adjust-lg-brand{
+	height: 50px;
+	width: 80px;
 }
       
